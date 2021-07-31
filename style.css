@@ -93,7 +93,7 @@ header {
     margin: 5px 20px;
 }
 
-#btn-wrap #btn {
+#btn-wrap #generate-btn {
     width: 100%;
     padding: 10px;
     font-size: 1.2rem;
@@ -104,13 +104,13 @@ header {
     font-weight: bold;
 }
 
-#btn-wrap #btn:hover {
+#btn-wrap #generate-btn:hover {
     cursor: pointer;
     background-color: rgb(73, 112, 108);
     color: #eeeeee;
 }
 
-#btn-wrap #btn:active {
+#btn-wrap #generate-btn:active {
     cursor: pointer;
     background-color: rgb(46, 70, 67);
     color: #eeeeee;
