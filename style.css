@@ -63,54 +63,54 @@ header {
     background-color: rgb(23, 32, 44);
 }
 
-#generator-form {
+#generator-options {
     margin: 10px 20px;
-}
-
-#generator-form form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#generator-form form div {
+#generator-options div {
     padding: 20px;
     text-align: center;
     border-right: 1px solid rgba(25, 33, 36, 0.2);
     flex-grow: 1;
 }
 
-#generator-form form div:last-of-type {
+#generator-options div:last-of-type {
     border: none;
 }
 
-#generator-form form div input[type="number"] {
+#generator-options div input[type="number"] {
     width: 3rem;
 }
 
-#generator-form form div input{
+#generator-options div input{
     margin: 20px 0;
 }
 
-#generator-form button {
+#btn-wrap {
+    margin: 5px 20px;
+}
+
+#btn-wrap #btn {
     width: 100%;
     padding: 10px;
     font-size: 1.2rem;
     background-color: rgb(101,152,147);
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
     color: #eeeeee;
     font-weight: bold;
 }
 
-#generator-form button:hover {
+#btn-wrap #btn:hover {
     cursor: pointer;
     background-color: rgb(73, 112, 108);
     color: #eeeeee;
 }
 
-#generator-form button:active {
+#btn-wrap #btn:active {
     cursor: pointer;
     background-color: rgb(46, 70, 67);
     color: #eeeeee;
