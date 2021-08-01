@@ -36,3 +36,11 @@ generatorBtn.addEventListener("click", function(e) {
     passwordBox.innerHTML = password;
     console.log(password);
 });
+
+copyBtn.addEventListener("click", function(e) {
+    e.preventDefault;
+    let text = passwordBox.innerHTML;
+    console.log(text);
+    text.select();
+    document.execCommand('copy');
+});
