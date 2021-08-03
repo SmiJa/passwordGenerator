@@ -21,6 +21,15 @@ function randNum(num) {
 generatorBtn.addEventListener("click", function(e) {
     e.preventDefault;
     let password = "";
+    let resetArr;
+
+    if (numbersSelection.checked) {
+        settingsArr.push(numbers);
+    }
+
+    if (specialSelection.checked) {
+        settingsArr.push(specialCharacters);
+    }
     
     for (let i = 0; i < length.value; i++) {
         let newRand = randNum(settingsArr.length);
@@ -33,14 +42,8 @@ generatorBtn.addEventListener("click", function(e) {
         // console.log(item);
     }
 
+    resetArr = settingsArr.splice(2);
+
     passwordBox.innerHTML = password;
     console.log(password);
-});
-
-copyBtn.addEventListener("click", function(e) {
-    e.preventDefault;
-    let text = passwordBox.innerHTML;
-    console.log(text);
-    text.select();
-    document.execCommand('copy');
 });
