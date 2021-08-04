@@ -41,9 +41,16 @@ generatorBtn.addEventListener("click", function(e) {
         password += item;
         // console.log(item);
     }
-
+    
     resetArr = settingsArr.splice(2);
 
     passwordBox.innerHTML = password;
     console.log(password);
+});
+
+copyBtn.addEventListener("click", function(e) {
+    let copiedText = passwordBox.innerHTML.trim();
+
+    navigator.clipboard.writeText(copiedText);
+    // alert("This feature is still being worked on. \n Sorry for the inconvenience.");
 });

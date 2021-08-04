@@ -13,7 +13,7 @@ body {
 }
 
 #generator-wrap {
-    width: 400px;
+    width: 600px;
     margin: 40px auto;
     background-color: rgb(194, 212, 216);
     padding-bottom: 12px;
@@ -114,4 +114,18 @@ header {
     cursor: pointer;
     background-color: rgb(46, 70, 67);
     color: #eeeeee;
+}
+
+@media (max-width: 620px) {
+    #generator-wrap {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    #password-box {
+        font-size: 1rem;
+    }
 }
