@@ -21,18 +21,23 @@
         </div>
         <div id="generator-options">
                 <div>
+                    <p class="option-title">Length</p>
                     <label for="length">
-                        <p>Length: </p><input type="number" name="length" id="length" min="6" max="24" value="6">
+                        <input type="number" name="length" id="length" min="6" max="24" value="6">
                     </label>
                 </div>
                 <div>
-                    <label for="numbers">
-                        <p>Numbers: </p><input type="checkbox" name="numbers" id="numbers">
+                    <p class="option-title">Numbers</p>
+                    <label for="numbers" class="switch first-switch">
+                        <input type="checkbox" name="numbers" id="numbers">
+                        <span class="slider"></span>
                     </label>
                 </div>
                 <div>
-                    <label for="special">
-                        <p>Special Characters: </p><input type="checkbox" name="special" id="special">
+                    <p class="option-title">Special Characters</p>
+                    <label for="special" class="switch second-switch">
+                        <input type="checkbox" name="special" id="special">
+                        <span class="slider"></span>
                     </label>
                 </div>
         </div>
