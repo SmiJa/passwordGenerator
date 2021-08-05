@@ -188,7 +188,7 @@ input[type="checkbox"]:checked + .slider:before {
 
 }
 
-@media (max-width: 476px) {
+@media (max-width: 545px) {
 
     #generator-options {
         flex-direction: column;
