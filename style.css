@@ -16,7 +16,7 @@ body {
 #generator-wrap {
     width: 600px;
     margin: 40px auto;
-    background-color: rgb(194, 212, 216);
+    background-color: rgb(211, 211, 211);
     padding-bottom: 12px;
 }
 
@@ -88,6 +88,17 @@ header {
     height: 32px;
     padding: 0;
     margin-top: 28px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
 }
 
 #generator-options div input{
@@ -139,7 +150,7 @@ header {
 }
 
 input[type="checkbox"]:checked + .slider {
-    background-color: #2fbb2f;
+    background-color: #00b7ff;
 }
 
 input[type="checkbox"]:checked + .slider:before {
@@ -154,16 +165,16 @@ input[type="checkbox"]:checked + .slider:before {
     width: 100%;
     padding: 10px;
     font-size: 1.2rem;
-    background-color: rgb(101,152,147);
-    border: none;
+    background-color: rgb(53,77,105);
     border-radius: 5px;
     color: #eeeeee;
     font-weight: bold;
+    border: 0
 }
 
 #btn-wrap #generate-btn:hover {
     cursor: pointer;
-    background-color: rgb(73, 112, 108);
+    background-color: rgb(39, 56, 77);
     color: #eeeeee;
 }
 
