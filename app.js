@@ -12,7 +12,7 @@ const upperLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7 , 8, 9];
 const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '-', '_'];
 
-const settingsArr = [lowerLetters, upperLetters];
+const charOptionsArr = [lowerLetters, upperLetters];
 
 function randNum(num) {
     return Math.floor(Math.random() * num);
@@ -24,17 +24,17 @@ generatorBtn.addEventListener("click", function(e) {
     let resetArr;
 
     if (numbersSelection.checked) {
-        settingsArr.push(numbers);
+        charOptionsArr.push(numbers);
     }
 
     if (specialSelection.checked) {
-        settingsArr.push(specialCharacters);
+        charOptionsArr.push(specialCharacters);
     }
     
     for (let i = 0; i < length.value; i++) {
-        let newRand = randNum(settingsArr.length);
+        let newRand = randNum(charOptionsArr.length);
         // console.log(newRand);
-        let currentArr = settingsArr[newRand];
+        let currentArr = charOptionsArr[newRand];
         // console.log(currentArr);
         let item = currentArr[randNum(currentArr.length)];
 
@@ -42,7 +42,7 @@ generatorBtn.addEventListener("click", function(e) {
         // console.log(item);
     }
     
-    resetArr = settingsArr.splice(2);
+    resetArr = charOptionsArr.splice(2);
 
     passwordBox.innerHTML = password;
     console.log(password);
@@ -52,5 +52,5 @@ copyBtn.addEventListener("click", function(e) {
     let copiedText = passwordBox.innerHTML.trim();
 
     navigator.clipboard.writeText(copiedText);
-    // alert("This feature is still being worked on. \n Sorry for the inconvenience.");
+    alert("You have coppied the password.");
 });
